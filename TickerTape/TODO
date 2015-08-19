@@ -1,0 +1,3 @@
+Have all the character looping etc on the uC.
+Have it broadcast to the server when it is done looping the current string.
+Then have the server broadcast the next message.
