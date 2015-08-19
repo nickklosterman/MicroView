@@ -1,3 +1,9 @@
+Wed Aug 19 00:00:45 EDT 2015
+
 Have all the character looping etc on the uC.
 Have it broadcast to the server when it is done looping the current string.
 Then have the server broadcast the next message.
+
+Have the text wrap.  Loop the text back around with a one line (10 char) break
+
+It appears that long strings slow things down quite a bit. I didn't realize how slow 9600 baud was. TFLN makes a good source to display as a ticker tape.
