@@ -3,10 +3,10 @@ import sys
 import time
 import serial
 import time
-PORT = "/dev/ttyUSB1"
+PORT = "/dev/ttyUSB0"
 
 TIMEFORMAT = "%m/%d/%y %H:%M:%S"
-INTERVAL = 0.21
+INTERVAL = 0.15  #the interval needs to be large enough such that we can send the whole message. It might be CPU dependent? If it isn't large enough longer strings will lag a bit and then speed up when the message is short enough. Possibly mitigate this by splitting the string such that only the visible portion is sent instead of the whole thing.
 x = 0
 TFLN = []
 
